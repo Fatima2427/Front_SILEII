@@ -1,0 +1,44 @@
+/* navbar-login.component.scss */
+@use '@angular/material' as mat;
+@import '../../../variables';
+
+.barra_general {
+    width: 100%;
+    height: 80px;
+    /* Puedes ajustar la altura según tus necesidades */
+    background-color: color_barra_inicio;
+    /* Usando una variable SCSS para el color de fondo */
+    display: flex;
+    justify-content: space-between;
+    /* Distribuye el espacio entre elementos */
+    align-items: center;
+    /* Centra verticalmente el contenido */
+    padding: 0 20px;
+    /* Espaciado interior (padding) para los bordes de la barra */
+    box-sizing: border-box;
+    /* Asegura que el padding no afecte el tamaño total */
+    position: fixed;
+    /* Fija la barra en la parte superior */
+    top: 0;
+    /* Alinea la barra al borde superior */
+    left: 0;
+    /* Alinea la barra al borde izquierdo */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Sombra debajo de la barra */
+    z-index: 1000;
+    /* Asegura que la barra esté por encima de otros elementos */
+}
+
+.izquierda {
+    top: 0;
+    /* Alinea la barra al borde superior */
+    left: 0;
+    /* Alinea la barra al borde izquierdo */
+}
+
+.derecha {
+    top: 0;
+    /* Alinea la barra al borde superior */
+    right: 0;
+    /* Alinea la barra al borde izquierdo */
+}
